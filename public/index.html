@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>API Counter | Mock Server Dashboard</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&family=Outfit:wght@400;700&display=swap" rel="stylesheet">
+    <script src="https://unpkg.com/lucide@latest"></script>
+</head>
+<body>
+    <div class="app-container">
+        <header>
+            <div class="logo">
+                <i data-lucide="activity"></i>
+                <h1>API<span>Counter</span></h1>
+            </div>
+            <div class="header-actions">
+                <button id="resetAllBtn" class="secondary-btn">
+                    <i data-lucide="refresh-cw"></i> Reset All
+                </button>
+                <button id="addApiBtn" class="primary-btn">
+                    <i data-lucide="plus"></i> Add API
+                </button>
+            </div>
+        </header>
+
+        <main>
+            <div class="stats-overview">
+                <div class="stat-card">
+                    <span class="stat-label">Total APIs</span>
+                    <span id="totalApis" class="stat-value">0</span>
+                </div>
+                <div class="stat-card">
+                    <span class="stat-label">Total Calls</span>
+                    <span id="totalCalls" class="stat-value">0</span>
+                </div>
+            </div>
+
+            <div id="apiList" class="api-grid">
+                <!-- API cards will be injected here -->
+            </div>
+        </main>
+
+        <!-- Add API Modal -->
+        <div id="addModal" class="modal">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h2>Add New API Endpoint</h2>
+                    <button class="close-modal">&times;</button>
+                </div>
+                <div class="modal-body">
+                    <div class="input-group">
+                        <label for="newApiPath">API Path</label>
+                        <div class="path-input-wrapper">
+                            <span class="prefix">/</span>
+                            <input type="text" id="newApiPath" placeholder="api/v1/users">
+                        </div>
+                        <p class="input-hint">Example: users/profile or my-custom-api</p>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button id="cancelAdd" class="secondary-btn">Cancel</button>
+                    <button id="saveApi" class="primary-btn">Create Endpoint</button>
+                </div>
+            </div>
+        </div>
+
+        <footer>
+            <p>&copy; 2026 API Counter Dashboard. Mock, Count, Build.</p>
+        </footer>
+    </div>
+
+    <script src="script.js"></script>
+    <script>
+        lucide.createIcons();
+    </script>
+</body>
+</html>
