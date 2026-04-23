@@ -189,17 +189,44 @@ header {
     margin-bottom: 1.5rem;
 }
 
+.api-path-container {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    background: #0d1117;
+    padding: 0.25rem 0.5rem;
+    border-radius: 8px;
+    max-width: 280px;
+}
+
 .api-path {
     font-family: 'Monaco', 'Consolas', monospace;
-    background: #0d1117;
-    padding: 0.4rem 0.8rem;
-    border-radius: 6px;
     font-size: 0.9rem;
     color: var(--accent-primary);
     overflow: hidden;
     text-overflow: ellipsis;
     white-space: nowrap;
-    max-width: 250px;
+}
+
+.copy-btn {
+    background: transparent;
+    border: none;
+    color: var(--text-secondary);
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0.25rem;
+    transition: color 0.2s;
+}
+
+.copy-btn:hover {
+    color: var(--text-primary);
+}
+
+.copy-btn i {
+    width: 16px;
+    height: 16px;
 }
 
 .api-actions {

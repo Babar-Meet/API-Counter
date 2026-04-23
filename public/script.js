@@ -28,7 +28,12 @@ function renderApis() {
     apiList.innerHTML = apis.map(api => `
         <div class="api-card" data-id="${api.id}">
             <div class="api-card-header">
-                <div class="api-path" title="${api.path}">${api.path}</div>
+                <div class="api-path-container">
+                    <div class="api-path" title="${api.path}">${api.path}</div>
+                    <button class="copy-btn" onclick="copyFullUrl('${api.path}')" title="Copy Full URL">
+                        <i data-lucide="copy"></i>
+                    </button>
+                </div>
                 <div class="api-actions">
                     <div class="action-icon reset" onclick="resetCount('${api.id}')" title="Reset Count">
                         <i data-lucide="rotate-ccw"></i>
@@ -108,6 +113,26 @@ async function resetAll() {
     } catch (error) {
         console.error('Error resetting all:', error);
     }
+}
+
+function copyFullUrl(path) {
+    const fullUrl = window.location.origin + path;
+    navigator.clipboard.writeText(fullUrl).then(() => {
+        // Optional: Change icon temporarily to checkmark
+        const btn = event.currentTarget;
+        const icon = btn.querySelector('i');
+        const originalIcon = icon.getAttribute('data-lucide');
+        
+        icon.setAttribute('data-lucide', 'check');
+        lucide.createIcons();
+        
+        setTimeout(() => {
+            icon.setAttribute('data-lucide', originalIcon);
+            lucide.createIcons();
+        }, 2000);
+    }).catch(err => {
+        console.error('Failed to copy: ', err);
+    });
 }
 
 // Modal Toggle
