@@ -116,3 +116,5 @@ app.use((req, res, next) => {
 app.listen(PORT, () => {
     console.log(`API Counter Server running at http://localhost:${PORT}`);
 });
+
+module.exports = app;
