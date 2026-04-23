@@ -10,7 +10,12 @@ const DATA_FILE = path.join(__dirname, 'data.json');
 
 app.use(cors());
 app.use(bodyParser.json());
-app.use(express.static('public'));
+app.use(express.static(path.join(__dirname, 'public')));
+
+// Explicitly serve index.html for the root path
+app.get('/', (req, res) => {
+    res.sendFile(path.join(__dirname, 'public', 'index.html'));
+});
 
 // Load or initialize data
 let apiConfig = {
