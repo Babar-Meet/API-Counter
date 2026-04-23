@@ -30,7 +30,7 @@ function renderApis() {
             <div class="api-card-header">
                 <div class="api-path-container">
                     <div class="api-path" title="${api.path}">${api.path}</div>
-                    <button class="copy-btn" onclick="copyFullUrl('${api.path}')" title="Copy Full URL">
+                    <button class="copy-btn" onclick="copyFullUrl(event, '${api.path}')" title="Copy Full URL">
                         <i data-lucide="copy"></i>
                     </button>
                 </div>
@@ -115,10 +115,9 @@ async function resetAll() {
     }
 }
 
-function copyFullUrl(path) {
+function copyFullUrl(event, path) {
     const fullUrl = window.location.origin + path;
     navigator.clipboard.writeText(fullUrl).then(() => {
-        // Optional: Change icon temporarily to checkmark
         const btn = event.currentTarget;
         const icon = btn.querySelector('i');
         const originalIcon = icon.getAttribute('data-lucide');
@@ -126,9 +125,12 @@ function copyFullUrl(path) {
         icon.setAttribute('data-lucide', 'check');
         lucide.createIcons();
         
+        btn.style.color = '#3fb950'; // Success green
+        
         setTimeout(() => {
             icon.setAttribute('data-lucide', originalIcon);
             lucide.createIcons();
+            btn.style.color = '';
         }, 2000);
     }).catch(err => {
         console.error('Failed to copy: ', err);
