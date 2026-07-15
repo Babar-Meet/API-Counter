@@ -1,0 +1,115 @@
+- generic [ref=f1e2]:
+  - banner [ref=f1e3]:
+    - heading "APICounter" [level=1] [ref=f1e7]
+    - generic [ref=f1e8]:
+      - button "Reset All" [ref=f1e9] [cursor=pointer]
+      - button "Add API" [ref=f1e15] [cursor=pointer]
+  - main [ref=f1e17]:
+    - generic [ref=f1e18]:
+      - generic [ref=f1e19]:
+        - generic [ref=f1e20]: Total APIs
+        - generic [ref=f1e21]: "7"
+      - generic [ref=f1e22]:
+        - generic [ref=f1e23]: Total Calls
+        - generic [ref=f1e24]: "13"
+    - generic [ref=f1e25]:
+      - generic [ref=f1e1226]:
+        - generic [ref=f1e1227]:
+          - generic [ref=f1e1228]:
+            - generic "/api/copy-test" [ref=f1e1229]
+            - button "Copy Full URL" [ref=f1e1230] [cursor=pointer]
+          - generic [ref=f1e1234]:
+            - generic "Reset Count" [ref=f1e1235] [cursor=pointer]
+            - generic "Delete API" [ref=f1e1239] [cursor=pointer]
+        - generic [ref=f1e1243]:
+          - generic [ref=f1e1244]: "0"
+          - generic [ref=f1e1245]: calls
+        - generic [ref=f1e1246]:
+          - generic [ref=f1e1247]: "Created: 4/24/2026"
+          - generic [ref=f1e1248]: "ID: 8328"
+      - generic [ref=f1e1249]:
+        - generic [ref=f1e1250]:
+          - generic [ref=f1e1251]:
+            - generic "/api/v1/users" [ref=f1e1252]
+            - button "Copy Full URL" [ref=f1e1253] [cursor=pointer]
+          - generic [ref=f1e1257]:
+            - generic "Reset Count" [ref=f1e1258] [cursor=pointer]
+            - generic "Delete API" [ref=f1e1262] [cursor=pointer]
+        - generic [ref=f1e1266]:
+          - generic [ref=f1e1267]: "3"
+          - generic [ref=f1e1268]: calls
+        - generic [ref=f1e1269]:
+          - generic [ref=f1e1270]: "Created: 7/14/2026"
+          - generic [ref=f1e1271]: "ID: 5102"
+      - generic [ref=f1e1272]:
+        - generic [ref=f1e1273]:
+          - generic [ref=f1e1274]:
+            - generic "/api/v1/orders" [ref=f1e1275]
+            - button "Copy Full URL" [ref=f1e1276] [cursor=pointer]
+          - generic [ref=f1e1280]:
+            - generic "Reset Count" [ref=f1e1281] [cursor=pointer]
+            - generic "Delete API" [ref=f1e1285] [cursor=pointer]
+        - generic [ref=f1e1289]:
+          - generic [ref=f1e1290]: "2"
+          - generic [ref=f1e1291]: calls
+        - generic [ref=f1e1292]:
+          - generic [ref=f1e1293]: "Created: 7/14/2026"
+          - generic [ref=f1e1294]: "ID: 5107"
+      - generic [ref=f1e1295]:
+        - generic [ref=f1e1296]:
+          - generic [ref=f1e1297]:
+            - generic "/webhook/stripe" [ref=f1e1298]
+            - button "Copy Full URL" [ref=f1e1299] [cursor=pointer]
+          - generic [ref=f1e1303]:
+            - generic "Reset Count" [ref=f1e1304] [cursor=pointer]
+            - generic "Delete API" [ref=f1e1308] [cursor=pointer]
+        - generic [ref=f1e1312]:
+          - generic [ref=f1e1313]: "4"
+          - generic [ref=f1e1314]: calls
+        - generic [ref=f1e1315]:
+          - generic [ref=f1e1316]: "Created: 7/14/2026"
+          - generic [ref=f1e1317]: "ID: 5112"
+      - generic [ref=f1e1318]:
+        - generic [ref=f1e1319]:
+          - generic [ref=f1e1320]:
+            - generic "/api/v1/products" [ref=f1e1321]
+            - button "Copy Full URL" [ref=f1e1322] [cursor=pointer]
+          - generic [ref=f1e1326]:
+            - generic "Reset Count" [ref=f1e1327] [cursor=pointer]
+            - generic "Delete API" [ref=f1e1331] [cursor=pointer]
+        - generic [ref=f1e1335]:
+          - generic [ref=f1e1336]: "1"
+          - generic [ref=f1e1337]: calls
+        - generic [ref=f1e1338]:
+          - generic [ref=f1e1339]: "Created: 7/14/2026"
+          - generic [ref=f1e1340]: "ID: 5118"
+      - generic [ref=f1e1341]:
+        - generic [ref=f1e1342]:
+          - generic [ref=f1e1343]:
+            - generic "/api/v1/auth/login" [ref=f1e1344]
+            - button "Copy Full URL" [ref=f1e1345] [cursor=pointer]
+          - generic [ref=f1e1349]:
+            - generic "Reset Count" [ref=f1e1350] [cursor=pointer]
+            - generic "Delete API" [ref=f1e1354] [cursor=pointer]
+        - generic [ref=f1e1358]:
+          - generic [ref=f1e1359]: "0"
+          - generic [ref=f1e1360]: calls
+        - generic [ref=f1e1361]:
+          - generic [ref=f1e1362]: "Created: 7/14/2026"
+          - generic [ref=f1e1363]: "ID: 5122"
+      - generic [ref=f1e1364]:
+        - generic [ref=f1e1365]:
+          - generic [ref=f1e1366]:
+            - generic "/healthcheck" [ref=f1e1367]
+            - button "Copy Full URL" [ref=f1e1368] [cursor=pointer]
+          - generic [ref=f1e1372]:
+            - generic "Reset Count" [ref=f1e1373] [cursor=pointer]
+            - generic "Delete API" [ref=f1e1377] [cursor=pointer]
+        - generic [ref=f1e1381]:
+          - generic [ref=f1e1382]: "3"
+          - generic [ref=f1e1383]: calls
+        - generic [ref=f1e1384]:
+          - generic [ref=f1e1385]: "Created: 7/14/2026"
+          - generic [ref=f1e1386]: "ID: 5128"
+  - contentinfo [ref=f1e187]:
+    - paragraph [ref=f1e188]: © 2026 API Counter Dashboard. Mock, Count, Build.

@@ -1,0 +1,30 @@
+- generic [ref=e2]:
+  - banner [ref=e3]:
+    - heading "APICounter" [level=1] [ref=e7]
+    - generic [ref=e8]:
+      - button "Reset All" [ref=e9] [cursor=pointer]
+      - button "Add API" [ref=e15] [cursor=pointer]
+  - main [ref=e17]:
+    - generic [ref=e18]:
+      - generic [ref=e19]:
+        - generic [ref=e20]: Total APIs
+        - generic [ref=e21]: "1"
+      - generic [ref=e22]:
+        - generic [ref=e23]: Total Calls
+        - generic [ref=e24]: "0"
+    - generic [ref=e59]:
+      - generic [ref=e60]:
+        - generic [ref=e61]:
+          - generic "/api/copy-test" [ref=e62]
+          - button "Copy Full URL" [ref=e63] [cursor=pointer]
+        - generic [ref=e67]:
+          - generic "Reset Count" [ref=e68] [cursor=pointer]
+          - generic "Delete API" [ref=e72] [cursor=pointer]
+      - generic [ref=e76]:
+        - generic [ref=e77]: "0"
+        - generic [ref=e78]: calls
+      - generic [ref=e79]:
+        - generic [ref=e80]: "Created: 4/24/2026"
+        - generic [ref=e81]: "ID: 8328"
+  - contentinfo [ref=e49]:
+    - paragraph [ref=e50]: © 2026 API Counter Dashboard. Mock, Count, Build.

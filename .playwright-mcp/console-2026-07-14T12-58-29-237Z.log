@@ -1,0 +1,2 @@
+[   92751ms] [ERROR] Failed to copy:  TypeError: Cannot read properties of null (reading 'querySelector')
+    at http://localhost:3000/script.js:122:26 @ http://localhost:3000/script.js:135
