@@ -83,31 +83,17 @@ verified for this record.
 
 ---
 
-## Unresolved: the project's own licence declaration contradicts LICENSE
+## The project's own licence
 
-Two files in this repository state opposite licence positions. This is recorded, not resolved. The
-decision belongs to the project owner.
-
-`package.json:13`, verbatim:
-
-> `"license": "ISC",`
-
-`LICENSE:1` and `LICENSE:3`, verbatim:
+This project is proprietary and all rights are reserved. `LICENSE`, verbatim:
 
 > Copyright (c) 2026 Babariya Meet. All rights reserved.
 >
 > No permission is granted to use, copy, modify, merge, publish, distribute, sublicense, create derivative works from, reference, reverse engineer for replication, or otherwise exploit this project, in whole or in part, for any purpose without prior written permission from the copyright holder.
 
-`package.json` declares ISC, a permissive grant. `LICENSE` is an all-rights-reserved notice that
-grants no rights without prior written permission, and it carries no SPDX identifier. Only the owner
-can decide which of the two positions the project intends. This file does not choose between them.
+`package.json` declares `"license": "UNLICENSED"`. That is npm's marker for proprietary software
+that grants no rights, so the manifest and `LICENSE` now state the same position. The manifest
+carries no SPDX identifier and neither does `LICENSE`, because there is no grant to express as one.
 
-The README `## License` section states that the project is proprietary and directs the reader to the
-`LICENSE` file, and in the current README asserts that `LICENSE` is authoritative against the
-`package.json` field. That is the README's own framing, cited here by heading because the README is
-under separate edit and its line numbers move. This file records the conflict and takes no position
-on which of the two statements governs.
-
-Separately, `remotion-video/package.json` declares no `license` field. npm's handling of an absent
-`license` field was not re-verified for this file; whether that subproject is a private internal
-subproject or a publishable package is an owner decision.
+`remotion-video/package.json` declares no `license` field. Whether that subproject is a private
+internal subproject or a publishable package is an owner decision.
